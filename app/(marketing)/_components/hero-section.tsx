@@ -69,13 +69,13 @@ export default function HeroSection() {
                                     },
                                 },
                             }}
-                            className="mask-b-from-35% mask-b-to-90% absolute inset-0 top-56 -z-20 lg:top-32">
+                            className="hidden md:block mask-b-from-35% mask-b-to-90% absolute inset-0 top-40 md:top-56 lg:top-32 -z-20">
                             <Image
                                 src={BackgroundImage}
                                 alt="background"
-                                className="hidden size-full dark:block"
-                                width="3276"
-                                height="4095"
+                                className="hidden md:block w-full h-auto object-cover"
+                                width={3276}
+                                height={4095}
                             />
                         </AnimatedGroup>
 
@@ -110,7 +110,7 @@ export default function HeroSection() {
                                     preset="fade-in-blur"
                                     speedSegment={0.3}
                                     as="h1"
-                                    className="mx-auto mt-8 max-w-5xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+                                    className="mx-auto mt-8 max-w-5xl text-balance text-3xl sm:text-5xl md:text-7xl max-md:font-semibold lg:mt-16 xl:text-[5.25rem]">
                                     The AI-ready home for team communication.
                                 </TextEffect>
                                 <TextEffect
@@ -174,22 +174,21 @@ export default function HeroSection() {
                                 },
                                 ...transitionVariants,
                             }}>
-                            <div className="mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+                            <div className="mask-b-from-55% relative mr-0 sm:-mr-56 mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20">
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image
-                                        className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block object-fit"
+                                        className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block object-cover w-full h-auto"
                                         src={HeroDark}
                                         alt="app screen"
-                                        width="2700"
-                                        height="1440"
-                                        
+                                        width={2700}
+                                        height={1440}
                                     />
                                     <Image
-                                        className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden object-fit"
+                                        className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden object-cover w-full h-auto"
                                         src={HeroLight}
                                         alt="app screen"
-                                        width="2700"
-                                        height="1440"
+                                        width={2700}
+                                        height={1440}
                                     />
                                 </div>
                             </div>
@@ -207,28 +206,16 @@ export default function HeroSection() {
                                 <ChevronRight className="ml-1 inline-block size-3" />
                             </Link>
                         </div>
-                        <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
+                        <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-2 sm:grid-cols-4 gap-x-6 sm:gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-y-14 text-center">
                             
 
                     
-                            <div className="flex">
-                                <Image
-                                    className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/github.svg"
-                                    alt="GitHub Logo"
-                                    height="16"
-                                    width="16"
-                                />
+                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                                GitHub
                             </div>
 
-                            <div className="flex">
-                                <Image
-                                    className="mx-auto h-6 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/openai.svg"
-                                    alt="OpenAI Logo"
-                                    height="24"
-                                    width="24"
-                                />
+                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                                OpenAI
                             </div>
                             <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
                                 Arcjet
