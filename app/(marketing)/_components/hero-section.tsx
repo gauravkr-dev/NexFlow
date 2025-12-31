@@ -174,7 +174,7 @@ export default function HeroSection() {
                                 },
                                 ...transitionVariants,
                             }}>
-                            <div className="mask-b-from-55% relative mr-0 sm:-mr-56 mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20">
+                            <div className="mask-b-from-55% relative mx-auto mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20 flex justify-center">
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image
                                         className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block object-cover w-full h-auto"
@@ -210,29 +210,29 @@ export default function HeroSection() {
                             
 
                     
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 GitHub
                             </div>
 
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 OpenAI
                             </div>
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 Arcjet
                             </div>
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 ORPC
                             </div>
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 Neon
                             </div>
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 Vercel
                             </div>
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 Kinde
                             </div>
-                            <div className='text-white-400 font-semibold text-[20px] leading-none tracking-[-0.01em]'>
+                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
                                 Uploadthing
                             </div>
                         </div>
