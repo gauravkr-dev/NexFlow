@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { HeroHeader } from './header'
-import BackgroundImage from "@/public/Background-Image.webp";
 import HeroLight from "@/public/Hero-Light.png";
 import HeroDark from "@/public/Hero-Dark.png";
 
@@ -44,7 +43,7 @@ export default function HeroSection() {
                 </div>
                 <section>
                     <div className="relative pt-24 md:pt-36">
-                        <AnimatedGroup
+                        {/* <AnimatedGroup
                             variants={{
                                 container: {
                                     visible: {
@@ -77,7 +76,7 @@ export default function HeroSection() {
                                 width={3276}
                                 height={4095}
                             />
-                        </AnimatedGroup>
+                        </AnimatedGroup> */}
 
                         <div
                             aria-hidden
@@ -120,7 +119,7 @@ export default function HeroSection() {
                                     delay={0.5}
                                     as="p"
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                     NexFlow organizes conversations into channels with threads, Realtime, and AI so teams stay in sync .
+                                    NexFlow organizes conversations into channels with threads, Realtime, and AI so teams stay in sync .
                                 </TextEffect>
 
                                 <AnimatedGroup
@@ -207,32 +206,32 @@ export default function HeroSection() {
                             </Link>
                         </div>
                         <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-2 sm:grid-cols-4 gap-x-6 sm:gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-y-14 text-center">
-                            
 
-                    
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+
+
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 GitHub
                             </div>
 
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 OpenAI
                             </div>
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 Arcjet
                             </div>
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 ORPC
                             </div>
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 Neon
                             </div>
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 Vercel
                             </div>
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 Kinde
                             </div>
-                            <div className='text-white font-semibold text-lg rounded-lg border border-white/10 p-2'>
+                            <div className="text-foreground dark:text-white font-semibold text-lg rounded-lg border border-border dark:border-white/10 p-2">
                                 Uploadthing
                             </div>
                         </div>
